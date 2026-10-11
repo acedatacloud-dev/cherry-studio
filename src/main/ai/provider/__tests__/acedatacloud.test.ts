@@ -3,7 +3,7 @@ import { resolve } from 'node:path'
 import { createOpenAICompatible } from '@ai-sdk/openai-compatible'
 import { generateText, streamText, tool } from 'ai'
 import { describe, expect, it } from 'vitest'
-import { z } from 'zod'
+import * as z from 'zod'
 
 import { readProviderRegistry } from '@cherrystudio/provider-registry/node'
 import { formatApiHost } from '@shared/utils/api'
@@ -12,7 +12,7 @@ import { OpenAIModelsResponseSchema } from '../listModelsSchemas'
 
 const registryPath = resolve(__dirname, '../../../../../packages/provider-registry/data/providers.json')
 const provider = readProviderRegistry(registryPath).providers.find(({ id }) => id === 'acedatacloud')!
-const baseURL = formatApiHost(provider.endpointConfigs['openai-chat-completions']?.baseUrl)
+const baseURL = formatApiHost(provider.endpointConfigs?.['openai-chat-completions']?.baseUrl)
 
 describe('Ace Data Cloud preset transport', () => {
   it('discovers models at the documented path without adding a v1 segment', () => {
