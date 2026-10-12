@@ -110,9 +110,7 @@
       "categoryKey": "settings.shortcuts.general",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "Escape"
-        ],
+        "defaultBinding": ["Escape"],
         "editable": false,
         "when": "!webview.focused"
       }
@@ -123,11 +121,7 @@
       "categoryKey": "settings.shortcuts.general",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "Shift",
-          "F"
-        ]
+        "defaultBinding": ["CommandOrControl", "Shift", "F"]
       }
     },
     {
@@ -136,10 +130,7 @@
       "categoryKey": "settings.shortcuts.general",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "P"
-        ]
+        "defaultBinding": ["CommandOrControl", "P"]
       }
     },
     {
@@ -148,10 +139,7 @@
       "categoryKey": "settings.shortcuts.topic",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "["
-        ]
+        "defaultBinding": ["CommandOrControl", "["]
       }
     },
     {
@@ -160,10 +148,7 @@
       "categoryKey": "settings.shortcuts.general",
       "scope": "main",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          ","
-        ],
+        "defaultBinding": ["CommandOrControl", ","],
         "editable": false
       }
     },
@@ -183,15 +168,9 @@
       "categoryKey": "settings.shortcuts.general",
       "scope": "main",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "Shift",
-          "W"
-        ],
+        "defaultBinding": ["CommandOrControl", "Shift", "W"],
         "editable": false,
-        "supportedPlatforms": [
-          "darwin"
-        ]
+        "supportedPlatforms": ["darwin"]
       }
     },
     {
@@ -200,20 +179,10 @@
       "categoryKey": "settings.shortcuts.general",
       "scope": "main",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "="
-        ],
+        "defaultBinding": ["CommandOrControl", "="],
         "additionalBindings": [
-          [
-            "CommandOrControl",
-            "Shift",
-            "="
-          ],
-          [
-            "CommandOrControl",
-            "numadd"
-          ]
+          ["CommandOrControl", "Shift", "="],
+          ["CommandOrControl", "numadd"]
         ],
         "editable": false
       }
@@ -224,16 +193,8 @@
       "categoryKey": "settings.shortcuts.general",
       "scope": "main",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "-"
-        ],
-        "additionalBindings": [
-          [
-            "CommandOrControl",
-            "numsub"
-          ]
-        ],
+        "defaultBinding": ["CommandOrControl", "-"],
+        "additionalBindings": [["CommandOrControl", "numsub"]],
         "editable": false
       }
     },
@@ -243,10 +204,7 @@
       "categoryKey": "settings.shortcuts.general",
       "scope": "main",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "0"
-        ],
+        "defaultBinding": ["CommandOrControl", "0"],
         "editable": false
       }
     },
@@ -256,10 +214,7 @@
       "categoryKey": "settings.shortcuts.chat",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "I"
-        ],
+        "defaultBinding": ["CommandOrControl", "I"],
         "when": "!webview.focused"
       }
     },
@@ -269,10 +224,7 @@
       "categoryKey": "settings.shortcuts.chat",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "K"
-        ]
+        "defaultBinding": ["CommandOrControl", "K"]
       }
     },
     {
@@ -281,11 +233,7 @@
       "categoryKey": "settings.shortcuts.chat",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "Shift",
-          "C"
-        ]
+        "defaultBinding": ["CommandOrControl", "Shift", "C"]
       }
     },
     {
@@ -294,11 +242,7 @@
       "categoryKey": "settings.shortcuts.chat",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "Shift",
-          "E"
-        ]
+        "defaultBinding": ["CommandOrControl", "Shift", "E"]
       }
     },
     {
@@ -307,10 +251,7 @@
       "categoryKey": "settings.shortcuts.chat",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "F"
-        ]
+        "defaultBinding": ["CommandOrControl", "F"]
       }
     },
     {
@@ -319,11 +260,7 @@
       "categoryKey": "settings.shortcuts.chat",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "Shift",
-          "M"
-        ]
+        "defaultBinding": ["CommandOrControl", "Shift", "M"]
       }
     },
     {
@@ -333,10 +270,7 @@
       "scope": "main",
       "enablement": "feature.quick_assistant.enabled",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "E"
-        ],
+        "defaultBinding": ["CommandOrControl", "E"],
         "global": true,
         "when": "feature.quick_assistant.enabled"
       }
@@ -351,11 +285,7 @@
         "defaultBinding": [],
         "global": true,
         "when": "feature.selection.enabled",
-        "supportedPlatforms": [
-          "darwin",
-          "win32",
-          "linux"
-        ]
+        "supportedPlatforms": ["darwin", "win32", "linux"]
       }
     },
     {
@@ -368,11 +298,7 @@
         "defaultBinding": [],
         "global": true,
         "when": "feature.selection.enabled",
-        "supportedPlatforms": [
-          "darwin",
-          "win32",
-          "linux"
-        ]
+        "supportedPlatforms": ["darwin", "win32", "linux"]
       }
     },
     {
@@ -382,18 +308,10 @@
       "scope": "main",
       "enablement": "feature.screenshot.enabled",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "Shift",
-          "A"
-        ],
+        "defaultBinding": ["CommandOrControl", "Shift", "A"],
         "global": true,
         "when": "feature.screenshot.enabled",
-        "supportedPlatforms": [
-          "darwin",
-          "win32",
-          "linux"
-        ]
+        "supportedPlatforms": ["darwin", "win32", "linux"]
       }
     },
     {
@@ -402,10 +320,7 @@
       "categoryKey": "settings.shortcuts.topic",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "L"
-        ]
+        "defaultBinding": ["CommandOrControl", "L"]
       }
     },
     {
@@ -414,10 +329,7 @@
       "categoryKey": "settings.shortcuts.topic",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "N"
-        ]
+        "defaultBinding": ["CommandOrControl", "N"]
       }
     },
     {
@@ -426,10 +338,7 @@
       "categoryKey": "settings.shortcuts.topic",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "T"
-        ]
+        "defaultBinding": ["CommandOrControl", "T"]
       }
     },
     {
@@ -438,10 +347,7 @@
       "categoryKey": "settings.shortcuts.topic",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "]"
-        ]
+        "defaultBinding": ["CommandOrControl", "]"]
       }
     },
     {
@@ -450,10 +356,7 @@
       "categoryKey": "settings.shortcuts.general",
       "scope": "renderer",
       "keybinding": {
-        "defaultBinding": [
-          "CommandOrControl",
-          "W"
-        ]
+        "defaultBinding": ["CommandOrControl", "W"]
       }
     },
     {
@@ -463,14 +366,8 @@
       "scope": "renderer",
       "keybinding": {
         "defaultBinding": {
-          "default": [
-            "CommandOrControl",
-            "Tab"
-          ],
-          "darwin": [
-            "Ctrl",
-            "Tab"
-          ]
+          "default": ["CommandOrControl", "Tab"],
+          "darwin": ["Ctrl", "Tab"]
         }
       }
     },
@@ -481,23 +378,15 @@
       "scope": "renderer",
       "keybinding": {
         "defaultBinding": {
-          "default": [
-            "CommandOrControl",
-            "Shift",
-            "Tab"
-          ],
-          "darwin": [
-            "Ctrl",
-            "Shift",
-            "Tab"
-          ]
+          "default": ["CommandOrControl", "Shift", "Tab"],
+          "darwin": ["Ctrl", "Shift", "Tab"]
         }
       }
     }
   ],
   "providers": {
-    "version": "3416349586ffa541",
-    "count": 66,
+    "version": "def4b787c1ba0356",
+    "count": 67,
     "entries": [
       {
         "id": "cherryin",
@@ -762,6 +651,10 @@
       {
         "id": "minimax-global",
         "name": "minimax-global"
+      },
+      {
+        "id": "acedatacloud",
+        "name": "Ace Data Cloud"
       }
     ]
   },
@@ -833,21 +726,8 @@
     }
   ],
   "agents": {
-    "channelTypes": [
-      "telegram",
-      "feishu",
-      "qq",
-      "wechat",
-      "wecom",
-      "dingtalk",
-      "discord",
-      "slack"
-    ],
-    "scheduleTriggerKinds": [
-      "cron",
-      "interval",
-      "once"
-    ],
+    "channelTypes": ["telegram", "feishu", "qq", "wechat", "wecom", "dingtalk", "discord", "slack"],
+    "scheduleTriggerKinds": ["cron", "interval", "once"],
     "codeCli": {
       "route": "/app/code",
       "tools": [
@@ -887,19 +767,8 @@
       }
     },
     "mcp": {
-      "serverTypes": [
-        "stdio",
-        "sse",
-        "streamableHttp",
-        "inMemory"
-      ],
-      "installSources": [
-        "builtin",
-        "manual",
-        "ai_assisted",
-        "protocol",
-        "unknown"
-      ]
+      "serverTypes": ["stdio", "sse", "streamableHttp", "inMemory"],
+      "installSources": ["builtin", "manual", "ai_assisted", "protocol", "unknown"]
     },
     "knowledge": {
       "supportedFileExtensions": [
@@ -920,9 +789,7 @@
         ".epub",
         ".draftsexport"
       ],
-      "fileProcessingExtensions": [
-        ".pdf"
-      ]
+      "fileProcessingExtensions": [".pdf"]
     }
   }
 }
