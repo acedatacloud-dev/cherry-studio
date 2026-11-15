@@ -39,9 +39,9 @@ export function getIconDisplayConfig(
   if (!iconId) return undefined
   const normalizedIconId = iconId.toLowerCase()
   if (context === 'provider-list') {
-    return normalizedIconId === 'litellm' ||
-      normalizedIconId === 'radeon-cloud' ||
-      getProviderIconAssetMetrics({ kind: 'provider', iconId }).kind === 'tile'
+    const { kind } = getProviderIconAssetMetrics({ kind: 'provider', iconId })
+    if (kind === 'full-canvas') return { scale: 1 }
+    return normalizedIconId === 'litellm' || normalizedIconId === 'radeon-cloud' || kind === 'tile'
       ? providerListContainedIcon
       : defaultIcon
   }
