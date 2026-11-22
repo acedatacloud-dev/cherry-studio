@@ -15,9 +15,9 @@ const provider = readProviderRegistry(registryPath).providers.find(({ id }) => i
 const baseURL = formatApiHost(provider.endpointConfigs?.['openai-chat-completions']?.baseUrl)
 
 describe('Ace Data Cloud preset transport', () => {
-  it('discovers models at the documented path without adding a v1 segment', () => {
+  it('uses the unified model-discovery path', () => {
     const url = `${baseURL}/models`
-    expect(url).toBe('https://api.acedata.cloud/openai/models')
+    expect(url).toBe('https://api.acedata.cloud/v1/models')
     expect(provider.modelListSource).toBe('api')
     expect(provider.authOptional).toBe(false)
 
@@ -114,7 +114,7 @@ describe('Ace Data Cloud preset transport', () => {
     expect(result.text).toBe('42')
     expect(requests).toHaveLength(2)
     for (const request of requests) {
-      expect(request.url).toBe('https://api.acedata.cloud/openai/chat/completions')
+      expect(request.url).toBe('https://api.acedata.cloud/v1/chat/completions')
       expect(request.headers.get('authorization')).toBe('Bearer test-acedatacloud-key')
       expect(request.body.model).toBe('gpt-4.1-mini')
     }
